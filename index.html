@@ -9,36 +9,70 @@
     <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
-    <div class="wrapper">
+    <div class="modalWrapper">
+        <div class="modalBlock">
+            <div class="modalBlockTitle">
+                <img src="img/closed.svg" alt="Closed" class="closedImg">
+            </div>
+            Модалька
+        </div>
+    </div>
+    <div class="global">
         <!-- start .container1 -->
-        <div class="container1">
+        <div class="container1" id="main">
             <header class="header">
                 <div class="headerContent">
                     <nav class="nav">
-                        <a href="#">Главная</a>
-                        <a href="">Слайдер</a>
-                        <a href="">Карточки</a>
-                        <a href="">Форма</a>
-                        <a href="">Список</a>
-                        <a href="">Модалка</a>
+                        <a href="#main">Главная</a>
+                        <a href="#slider">Слайдер</a>
+                        <a href="#cards">Карточки</a>
+                        <a href="#form">Форма</a>
+                        <a href="#list">Список</a>
+                        <a href="#modal" class="openModal">Модалка</a>
                     </nav>
+                    <img src="img/Logo.svg" alt="" class="headerLogo">
+                    <div class="btn-menu">
+                        <span></span>
+                    </div>
                 </div>
             </header>
+            <div class="dropdown">
+                <nav class="navDrop">
+                    <a href="#main">Главная</a>
+                    <a href="#slider">Слайдер</a>
+                    <a href="#cards">Карточки</a>
+                    <a href="#form">Форма</a>
+                    <a href="#list">Список</a>
+                    <a href="#modal" class="openModal">Модалка</a>
+                </nav>
+            </div>
+            <!-- начало контейнер 1 для экрана <600 -->
+            <div class="container1-600">
+                <div class="con1-600_textBlock">
+                    <div class="con1-600_textTitle">
+                        <img src="img/mainText.svg" alt="Main text">
+                        <div class="con1-600_textTitle">Тестовое задание</div>
+                    </div>
+                </div>
+                <img src="img/container1-bg.png" alt="" class="container1-600-img">
+                <button class="btnModal-600 btnModal openModal">Модальное окно</button>
+            </div>
+            <!-- конец контейнер 1 для экрана <600 -->
             <div class="container1_Content">
                 <div class="con1_ContentBlock">
                     <img src="img/mainText.svg" alt="Main text">
                     <div class="con1_text">
                         Тестовое задание
                     </div>
-                    <button class="btnModal">Модальное окно</button>
+                    <button class="btnModal openModal">Модальное окно</button>
                 </div>
             </div>
         </div>
         <!-- end .container1 -->
 
         <!-- start .container2 -->
-        <div class="container2">
-            <div class="con2TitleBlock">
+        <div class="container2" id="slider">
+            <div class="containerTitle">
                 <img src="img/textSlider.svg" alt="Text slider">
             </div>
             <div class="owl-carousel owl-theme owl-carousel-1">
@@ -77,8 +111,8 @@
         <!-- end .container2 -->
 
         <!-- start .container3 -->
-        <div class="container3">
-            <div class="con2TitleBlock con3TitleBlock">
+        <div class="container3" id="cards">
+            <div class="containerTitle containerTitle3">
                 <img src="img/cardImg.svg" alt="Card">
                 <div class="sliderOwl2Arrows">
                     <button type="button" role="presentation" class="prev"><span aria-label="Previous">‹</span></button>
@@ -95,7 +129,7 @@
                         <div class="sladeCardText">
                             Описание Описание Описание Описание Описание ОписаниеОписание Описание Описание
                         </div>
-                        <button class="btnCard">Модальное окно</button>
+                        <button class="btnCard openModal">Модальное окно</button>
                     </div>
                 </div>
                 <div class="slideCardWrapper">
@@ -107,7 +141,7 @@
                         <div class="sladeCardText">
                             Описание Описание Описание Описание 
                         </div>
-                        <button class="btnCard">Модальное окно</button>
+                        <button class="btnCard openModal">Модальное окно</button>
                     </div>
                 </div>
                 <div class="slideCardWrapper">
@@ -119,7 +153,7 @@
                         <div class="sladeCardText">
                             Описание Описание Описание Описание Описание ОписаниеОписание Описание Описание
                         </div>
-                        <button class="btnCard">Модальное окно</button>
+                        <button class="btnCard openModal">Модальное окно</button>
                     </div>
                 </div>
                 <div class="slideCardWrapper">
@@ -131,7 +165,7 @@
                         <div class="sladeCardText">
                             Описание Описание Описание Описание Описание ОписаниеОписание Описание Описание
                         </div>
-                        <button class="btnCard">Модальное окно</button>
+                        <button class="btnCard openModal">Модальное окно</button>
                     </div>
                 </div>
                 <div class="slideCardWrapper">
@@ -143,7 +177,7 @@
                         <div class="sladeCardText">
                             Описание Описание Описание Описание 
                         </div>
-                        <button class="btnCard">Модальное окно</button>
+                        <button class="btnCard openModal">Модальное окно</button>
                     </div>
                 </div>
                 <div class="slideCardWrapper">
@@ -155,7 +189,7 @@
                         <div class="sladeCardText">
                             Описание Описание Описание Описание Описание ОписаниеОписание Описание Описание
                         </div>
-                        <button class="btnCard">Модальное окно</button>
+                        <button class="btnCard openModal">Модальное окно</button>
                     </div>
                 </div>
                 <div class="slideCardWrapper">
@@ -167,7 +201,7 @@
                         <div class="sladeCardText">
                             Описание Описание Описание Описание Описание ОписаниеОписание Описание Описание
                         </div>
-                        <button class="btnCard">Модальное окно</button>
+                        <button class="btnCard openModal">Модальное окно</button>
                     </div>
                 </div>
                 <div class="slideCardWrapper">
@@ -179,7 +213,7 @@
                         <div class="sladeCardText">
                             Описание Описание Описание Описание 
                         </div>
-                        <button class="btnCard">Модальное окно</button>
+                        <button class="btnCard openModal">Модальное окно</button>
                     </div>
                 </div>
                 <div class="slideCardWrapper">
@@ -191,15 +225,15 @@
                         <div class="sladeCardText">
                             Описание Описание Описание Описание Описание ОписаниеОписание Описание Описание
                         </div>
-                        <button class="btnCard">Модальное окно</button>
+                        <button class="btnCard openModal">Модальное окно</button>
                     </div>
                 </div>
             </div>
         </div>
         <!-- end .container3 -->
 
-        <!-- end .container3 -->
-        <div class="container4">
+        <!-- start .container4 -->
+        <div class="container4" id="form">
             <div class="con4_bg-1">
                 <img src="img/formImg-1.png" alt="">
             </div>
@@ -221,12 +255,66 @@
                 </div>
                 <textarea name="" id="" placeholder="Напиши что-нибудь"></textarea>
                 <div class="formButtons">
-                    <div class="notSend"></div>
-                    <button>Отправить</button>
+                    <div class="notSend">Не отправлять</div>
+                    <button class="formBtnSend">Отправить</button>
                 </div>
             </form>
         </div>
-        <!-- end .container3 -->
+        <!-- end .container4 -->
+
+        <!-- start .container5 -->
+        <div class="container5">
+            <div class="accordeon">
+                <div class="accordeonItem">
+                    <div class="accordeionTitleBlock">
+                        <div class="accordeionTitle">Список 1</div>
+                        <img src="img/accordBtn.svg" alt="" class="accordImg">
+                    </div>
+                    <div class="accordeionTextBlock">
+                        <div class="text">
+                            Тут как с водопроводом: количество потребляемой воды на квартиру зависит от количества людей и их потребностей.
+                            Внимание! Роутер можно взять в аренду, но в этом случае к вам может попасть устаревшее или даже неисправное оборудование, что может сказаться на качестве услуг и нашей репутации. Так же вы можете воспользоваться беспроцентной рассрочкой. 
+                        </div>
+                    </div>
+                </div>
+                <div class="accordeonItem">
+                    <div class="accordeionTitleBlock">
+                        <div class="accordeionTitle">Список 2</div>
+                        <img src="img/accordBtn.svg" alt="" class="accordImg">
+                    </div>
+                    <div class="accordeionTextBlock">
+                        <div class="text">
+                            Тут как с водопроводом: количество потребляемой воды на квартиру зависит от количества людей и их потребностей.
+                            Внимание! Роутер можно взять в аренду, но в этом случае к вам может попасть устаревшее или даже неисправное оборудование, что может сказаться на качестве услуг и нашей репутации. Так же вы можете воспользоваться беспроцентной рассрочкой. 
+                        </div>
+                    </div>
+                </div>
+                <div class="accordeonItem">
+                    <div class="accordeionTitleBlock">
+                        <div class="accordeionTitle">Список 3</div>
+                        <img src="img/accordBtn.svg" alt="" class="accordImg">
+                    </div>
+                    <div class="accordeionTextBlock">
+                        <div class="text">
+                            Тут как с водопроводом: количество потребляемой воды на квартиру зависит от количества людей и их потребностей.
+                            Внимание! Роутер можно взять в аренду, но в этом случае к вам может попасть устаревшее или даже неисправное оборудование, что может сказаться на качестве услуг и нашей репутации. Так же вы можете воспользоваться беспроцентной рассрочкой. 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end .container5 -->
+
+        <footer>
+            <nav class="nav">
+                <a href="#main">Главная</a>
+                <a href="#slider">Слайдер</a>
+                <a href="#cards">Карточки</a>
+                <a href="#form">Форма</a>
+                <a href="#list">Список</a>
+                <a href="#modal"  class="openModal">Модалка</a>
+            </nav>
+        </footer>
 
     </div>
 
