@@ -14,7 +14,7 @@
             <div class="modalBlockTitle">
                 <img src="img/closed.svg" alt="Closed" class="closedImg">
             </div>
-            Модалька
+            <img src="img/modal.svg" alt="Modal" class="imgModal">
         </div>
     </div>
     <div class="global">
@@ -28,7 +28,9 @@
                         <a href="#cards">Карточки</a>
                         <a href="#form">Форма</a>
                         <a href="#list">Список</a>
-                        <a href="#modal" class="openModal">Модалка</a>
+                        <a href="#modal" class="openModal">
+                            Модалка
+                        </a>
                     </nav>
                     <img src="img/Logo.svg" alt="" class="headerLogo">
                     <div class="btn-menu">
@@ -38,11 +40,11 @@
             </header>
             <div class="dropdown">
                 <nav class="navDrop">
-                    <a href="#main">Главная</a>
-                    <a href="#slider">Слайдер</a>
-                    <a href="#cards">Карточки</a>
-                    <a href="#form">Форма</a>
-                    <a href="#list">Список</a>
+                    <a href="#main" class="navDropLink">Главная</a>
+                    <a href="#slider" class="navDropLink">Слайдер</a>
+                    <a href="#cards" class="navDropLink">Карточки</a>
+                    <a href="#form" class="navDropLink">Форма</a>
+                    <a href="#list" class="navDropLink">Список</a>
                     <a href="#modal" class="openModal">Модалка</a>
                 </nav>
             </div>
@@ -75,35 +77,43 @@
             <div class="containerTitle">
                 <img src="img/textSlider.svg" alt="Text slider">
             </div>
-            <div class="owl-carousel owl-theme owl-carousel-1">
-                <div class="slide">
-                    <div class="slideBlock">
-                        <img src="img/slider-img1.png" alt="">
-                    </div>
+            
+            <div class="wrapperSlider1">
+                <div class="sliderOwl1Arrows">
+                    <button type="button" role="presentation" class="prev1"><span aria-label="Previous">‹</span></button>
+                    <button type="button" role="presentation" class="next1"><span aria-label="Next">›</span></button>
                 </div>
-                <div class="slide">
-                    <div class="slideBlock">
-                        <img src="img/slider-img1.png" alt="">
+            
+                <div class="owl-carousel owl-theme owl-carousel-1">
+                    <div class="slide">
+                        <div class="slideBlock">
+                            <img src="img/slider-img1.png" alt="">
+                        </div>
                     </div>
-                </div>
-                <div class="slide">
-                    <div class="slideBlock">
-                        <img src="img/slider-img1.png" alt="">
+                    <div class="slide">
+                        <div class="slideBlock">
+                            <img src="img/slider-img1.png" alt="">
+                        </div>
                     </div>
-                </div>
-                <div class="slide">
-                    <div class="slideBlock">
-                        <img src="img/slider-img1.png" alt="">
+                    <div class="slide">
+                        <div class="slideBlock">
+                            <img src="img/slider-img1.png" alt="">
+                        </div>
                     </div>
-                </div>
-                <div class="slide">
-                    <div class="slideBlock">
-                        <img src="img/slider-img1.png" alt="">
+                    <div class="slide">
+                        <div class="slideBlock">
+                            <img src="img/slider-img1.png" alt="">
+                        </div>
                     </div>
-                </div>
-                <div class="slide">
-                    <div class="slideBlock">
-                        <img src="img/slider-img1.png" alt="">
+                    <div class="slide">
+                        <div class="slideBlock">
+                            <img src="img/slider-img1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slideBlock">
+                            <img src="img/slider-img1.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -240,20 +250,28 @@
             <div class="con4_bg-2">
                 <img src="img/formImg-2.png" alt="">
             </div>
+            <div class="con4_bg-600">
+                <img src="img/form-600.svg" alt="">
+            </div>
             <form>
                 <img src="img/form.svg" alt="Form">
                 <div class="formText">
                     Стандартная форма обратной связи
                 </div>
+
+                <input type="hidden" name="project_name" value="Growtesk">
+                <input type="hidden" name="admin_email" value="sergosaga2@gmail.com">
+                <input type="hidden" name="form_subject" value="Новый запрос с формы">
+
                 <div class="input">
-                    <input type="text" id="inputName" required="required">
-                    <label for="inputName">Имя<span>*</span></label>
+                    <input type="text" id="Name" name="Name" required="required">
+                    <label for="Name">Имя<span>*</span></label>
                 </div>
                 <div class="input">
-                    <input type="text" id="inputPhone" required="required">
-                    <label for="inputPhone">Телефон<span>*</span></label>
+                    <input type="text" id="Phone" name="Phone" required="required" class="inputPhone">
+                    <label for="Phone">Телефон<span>*</span></label>
                 </div>
-                <textarea name="" id="" placeholder="Напиши что-нибудь"></textarea>
+                <textarea name="Message" id="" placeholder="Напиши что-нибудь"></textarea>
                 <div class="formButtons">
                     <div class="notSend">Не отправлять</div>
                     <button class="formBtnSend">Отправить</button>
@@ -263,7 +281,7 @@
         <!-- end .container4 -->
 
         <!-- start .container5 -->
-        <div class="container5">
+        <div class="container5" id="list">
             <div class="accordeon">
                 <div class="accordeonItem">
                     <div class="accordeionTitleBlock">
@@ -320,6 +338,8 @@
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/script.js"></script>
     <script src="js/normalize.js"></script>
 </body>
 </html>

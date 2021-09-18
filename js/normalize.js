@@ -32,10 +32,16 @@ $( document ).ready(function() {
         e.preventDefault();
     });
 
+    $('.navDropLink').on('click', () => {
+        $('.btn-menu').toggleClass('btn-menu-active');
+        $('.dropdown').toggleClass('dropdownActive');
+        $('body').toggleClass("bodyNoneScroll");
+    });
+
     $(".owl-carousel-1").owlCarousel({
         items: 1,
         touchDrag: true,
-        nav: true,
+        nav: false,
         dots: false,
         loop: true
     });
@@ -59,6 +65,14 @@ $( document ).ready(function() {
         }
     });
     
+    var owl1=$(".owl-carousel-1");
+	owl1.owlCarousel();
+	$(".next1").click(function(){
+		owl1.trigger("next.owl.carousel");
+	});
+	$(".prev1").click(function(){
+		owl1.trigger("prev.owl.carousel");
+    });
     var owl=$(".owl-carousel-2");
 	owl.owlCarousel();
 	$(".next").click(function(){
@@ -67,6 +81,8 @@ $( document ).ready(function() {
 	$(".prev").click(function(){
 		owl.trigger("prev.owl.carousel");
     });
+
+    $('.inputPhone').mask("+7 (999) 999 99 99");
     
     $('.accordeonItem').on('click', function() {
         $(this).find('.accordeionTextBlock').slideToggle(150);
