@@ -164,6 +164,10 @@ button {
     width: 100%;
     height: 100%;
   }
+
+  .containerTitle img {
+    max-width: 400px;
+  }
 }
 .container1 {
   width: 100%;
@@ -422,17 +426,20 @@ button {
   height: 100vh;
   min-height: 800px;
   overflow: hidden;
+  border: 1px solid red;
 }
 
 .con1-600_textBlock {
   width: 100%;
   padding: 0 20px;
   padding-top: 100px;
+  border: 1px solid grey;
 }
 
 .con1-600_textBlock img {
-  max-width: 350px;
+  max-width: 200px;
   margin-bottom: 16px;
+  border: 1px solid green;
 }
 
 .con1-600_textTitle {
@@ -461,7 +468,7 @@ button {
   left: 0;
   right: 0;
   margin: auto;
-  bottom: 20px;
+  bottom: 60px;
 }
 
 @media (max-width: 800px) {
@@ -506,6 +513,10 @@ button {
 
   .container1-600 {
     display: block;
+  }
+
+  .con1-600_textTitle img {
+    max-width: 350px;
   }
 }
 .container2 {
@@ -625,13 +636,30 @@ button {
 }
 
 .slideCard {
-  position: relative;
   max-width: 440px;
   height: 740px;
   background: #FAFAFA;
   border-radius: 8px;
   margin: auto;
   padding: 32px;
+}
+
+.slideCardBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  height: 100%;
+  width: 100%;
 }
 
 .slideCard img {
@@ -643,6 +671,7 @@ button {
   font-size: 26px;
   line-height: 33px;
   color: #333;
+  margin-top: -66px;
   margin-bottom: 12px;
 }
 
@@ -652,10 +681,10 @@ button {
   font-size: 20px;
   line-height: 160%;
   color: #000;
+  margin-top: -66px;
 }
 
 .btnCard {
-  position: absolute;
   height: 40px;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -666,8 +695,7 @@ button {
   font-feature-settings: "pnum" on, "lnum" on;
   color: #0D0D0D;
   bottom: 32px;
-  left: 32px;
-  right: 32px;
+  width: 100%;
   border: 1px solid #000;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
